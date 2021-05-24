@@ -1,0 +1,45 @@
+<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d 
+#RewriteRule . index.php [L]
+#RewriteCond %{HTTP_HOST} ^www\. [NC,OR]
+#RewriteCond %{HTTPS} off
+#RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+#RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L,NE]
+
+
+#Options -MultiViews
+#RewriteEngine On
+#RewriteCond %{HTTPS} =off
+#RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+) [NC]
+#RewriteRule ^ https://www.%1%{REQUEST_URI} [R=302,L,NE]
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule ^ https://www\.%{HTTP_HOST}%{REQUEST_URI} [R=302,L,NE]
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule . index.html [END]
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index.html [L]
+
+</IfModule>
+
+# Prevent file browsing
+Options -Indexes
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 2 days"
