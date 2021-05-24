@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+/* -------------------------------------------
+font-family: 'Poppins', sans-serif;
+------------------------------------------- */
+
+.fnt-100{
+    font-weight: 100 !important;
+}
+.fnt-200{
+    font-weight: 200 !important;
+}
+.fnt-300{
+    font-weight: 300 !important;
+}
+.fnt-400{
+    font-weight: 400 !important;
+}
+.fnt-500{
+    font-weight: 500 !important;
+}
+.fnt-600{
+    font-weight: 600 !important;
+}
+.fnt-700{
+    font-weight: 700 !important;
+}
+.fnt-800{
+    font-weight: 800 !important;
+}
+.modal {
+	background: #fff;
+}
+.modal-inner .col-md-6, .modal-inner .col-lg-6{
+	float: left;
+}
+.modal-holder .modal-content {
+	margin: 50px auto 20px;
+}
+.applyModal {
+	color: #007bff;
+}
+.btnM:hover {
+	cursor: pointer;
+	color: #0056b3 !important;
+}
+.modal-body .btn-close {
+	color: #fff;
+}
+/* Apply Form Modal Custom CSS ------------------------ */
+.relative-form-modal{
+	position: relative;
+}
+.bg-color-content{
+	background-color: #fafafa;
+}
+.custom-modal-close-form{
+	position: absolute;
+	right: 1%;
+	top: 1%;
+	z-index: 10;
+}
+.bg-left-form{
+	background-image: url('https://d2qcctj8epnr7y.cloudfront.net/images/2013/bg-contrib-big2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.bg-left-overlay{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-color: rgba(62, 220, 129,0.5);
+}
+.left-content-main,
+.bg-form-content{
+	position: relative;
+	padding: 35px 20px;
+	font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+.left-content-logo{
+    color: #000;   
+}
+.left-content-main .title-left{
+	color: #ffffff;
+	font-size: 1.40rem;
+	font-weight: 600;
+	color: #000;
+}
+.left-content-main .sub-title-left{
+	color: #2a2a2a;
+}
+.left-content-main .desc-left{
+	font-size: 13px;
+}
+.box-steps{
+	background-color: rgba(255,255,255,0.8);
+	color: #333;
+}
+
+/* Note Style ---------- */
+.note {
+    color: #666;
+    position: relative;
+    display: block;
+    margin-bottom: 1rem
+}
+.note-header {
+    padding: .25rem 1rem;
+    color: #fff;
+}
+.note-body {
+    padding: 1rem;
+}
+.note-info {
+    background-color: #E7F2FA;
+}
+.note-info .note-header {
+    background-color: #6AB0DE;
+}
+.note-danger {
+    background-color: #FAE2E2;
+}
+.note-danger .note-header {
+    background-color: rgba(217,83,79,.8);
+}
+
+/* Pulse Animation --------------- */
+.pulse-btn{
+	animation: pulse-btn 2s infinite;
+}
+
+@-webkit-keyframes pulse-btn {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0,123,255, 0.5);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(0,123,255, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0,123,255, 0);
+    }
+}
+@keyframes pulse-btn {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(0,123,255, 0.5);
+        box-shadow: 0 0 0 0 rgba(0,123,255, 0.5);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(0,123,255, 0);
+        box-shadow: 0 0 0 10px rgba(0,123,255, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(0,123,255, 0);
+        box-shadow: 0 0 0 0 rgba(0,123,255, 0);
+    }
+}
+
+
+
+/* Inquiry Contact Form ------------------ */
+.left-content-main{
+    margin-bottom: auto;
+}
+.left-content-logo{
+    position: relative;
+    padding: 35px 20px;
+}
+
+/* Introduction ---------------------- */
+.flex-bottom-logo{
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    min-height: 500px;
+}
+
+/* Choices Radio Button -------------------- */
+.custom-option-control{
+    background-color: #efefef;
+    padding: 1rem 3rem;
+}
